@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 .nav {
-    @apply relative hover:text-green-400 tracking-[1px]
+    @apply relative hover:text-orange-600 tracking-[1px]
 }
 
 .nav::after {
-    @apply content-[''] bg-green-400 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
+    @apply content-[''] bg-orange-600 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
 }
 
 .nav:hover::after {
     @apply w-[100%]
 }
 .container {
-    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 nav>li {
     list-style: none;
 }
 .navlink-active {
-    color: rgb(110, 194, 110);
-    border-bottom: 2px solid rgb(110, 194, 110);
+    color: rgb(205, 112, 19);
+    border-bottom: 2px solid rgb(205, 112, 19);
 }
 .btn-file {
     position: relative;
@@ -37,3 +37,32 @@ nav>li {
     transform: scale(3);
     opacity: 0;
 }
+
+/* .slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+.slider .content{
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+.arrow-buttons button{
+    background: #ede6e6;
+    border-radius:50% ;
+    margin: 0px 5px;
+    border: 0px;
+}
+.arrow-buttons button:hover{
+   background-color: rgb(216, 131, 131);
+}
+
+.slick-arrow.slick-hidden{
+    display: block !important;
+}
+
+/*  */

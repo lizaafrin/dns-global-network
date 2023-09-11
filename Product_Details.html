@@ -25,10 +25,10 @@
                     <ul class="flex justify-between items-center list-none mr-12">
                         <li class="mr-8"><a href=""><img class="w-16 md:w-20 lg:w-28 " src="img/Home/a03 2.png"
                                     alt=""></a></li>
-                        <li class="navlink-active"><a class="nav" href="./DnsNetWork_Home.html">Home</a></li>
-                        <li><a class="nav" href="#">Contact</a></li>
-                        <li><a class="nav" href="./About_us.html">About </a></li>
-                        <li><a class="nav" href="#">Sign Up</a></li>
+                        <li class="navlink-active"><a class="nav" href="./index.html">Home</a></li>
+                        <li><a class="nav" href="./LogIn.html">Contact</a></li>
+                        <li><a class="nav" href="./Products.html">Product </a></li>
+                        <li><a class="nav" href="./SignUp.html">Sign Up</a></li>
                     </ul>
                 </div>
                 <div class="w-2/5 flex lg: justify-around xl:justify-between items-center list-none bg-white">
@@ -44,10 +44,10 @@
 
                     <div class="flex items-center md:gap-2 lg:gap-8">
                         <li>
-                            <a href=""><img src="img/Home/Vector (2).png" alt=""></a>
+                            <a href="./Wishlist.html"><img src="img/Home/Vector (2).png" alt=""></a>
                         </li>
                         <li>
-                            <a href=""><img src="img/Home/Cart1 with buy.png" alt=""></a>
+                            <a href="./Cart.html"><img src="img/Home/Cart1 with buy.png" alt=""></a>
                         </li>
                         <li><i class="fa-solid fa-user"></i></li>
                     </div>
@@ -142,115 +142,278 @@
                     install & mess free removal Pressure sensitive.</small>
                 <hr class="my-3 border-gray-400">
 
-                
-                    <div class="w-1/4 border rounded">
-                        <button class="border-r-2 px-2">-</button>
-                        <span class="num1 border-r-2  items-center px-3">0</span>
-                        <button class=" px-2">+</button>
+
+                <div class="flex gap-4 my-6">
+                    <div class="w-2/4 border rounded">
+                        <button class="border-r-2 px-2 py-1">-</button>
+                        <button class="num1 border-r-2 py-1 px-2">0</button>
+                        <button class=" py-1 px-4">+</button>
                     </div>
                     <!-- <div class="flex flex-col">
                         <i class="fa-solid fa-caret-up text-sm plus1 cursor-pointer"></i>
                         <i class="fa-solid fa-caret-down text-sm minus1 cursor-pointer"></i>
                     </div> -->
-                    <div class="" >
-                        <button>Buy Now</button>
+                    <div class="w-3/4">
+                        <button
+                            class="border rounded bg-gradient-to-r from-[#ff620e] to-[#f88d43] w-full text-white px-4 py-1">Buy
+                            Now</button>
                     </div>
-                
+                    <div class="w-1/4 flex justify-end items-center">
+                        <i class="border  rounded px-2 py-1 fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="border rounded my-10">
+                    <div class="flex gap-4 py-4 px-3">
+                        <img src="img/product/icon-delivery.png" alt="">
+                        <div class="flex flex-col">
+                            <h4>Free Delivery</h4>
+                            <small>Enter your postal code for Delivery Availability</small>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 py-4 px-3">
+                        <img src="img/product/Icon-return.png" alt="">
+                        <div class="flex flex-col">
+                            <h4>Return Delivery</h4>
+                            <small>Free 30 Days Delivery Returns. Details</small>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Just for you -->
+    <!-- Related item -->
     <section class="container px-6 xl:px-0 pt-10 md:py-20">
-        <div class="flex gap-14 md:justify-between">
-            <p class="text-xl font-medium">Products</p>
-            <button class="border border-black px-2 py-1">Move All to Bag </button>
+        
+    </section>
+
+    <section class="container px-6 my-20">
+        <div class="ps-6 md:ps-0">
+            <small class="text-red-400">Our Products</small>
+            <h2 class="text-xl md:text-4xl font-bold md:pt-7">Explore Our products</h2>
+            <!-- <div class="content flex-col md:flex md:flex-row justify-between items-center">
+                <div class="flex md:flex-row gap-6 md:gap-20">
+                    
+                </div>
+                <h2>Client</h2>
+                <div class="arrow-buttons pr-20 flex items-center mt-8 md:mt-0">
+                    <button class="slick-next-btn"><i
+                            class='fa-sharp fa-solid fa-chevron-left px-3 py-2 md:px-6 md:py-5'></i></button>
+                    <button class="slick-prev-btn"><i
+                            class='fa-sharp fa-solid fa-chevron-right px-3 py-2 md:px-6 md:py-5'></i></button>
+                </div>
+            </div> -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-16">
+                <div class="flex flex-col">
+                    <div class=" card md:w-60 md:h-60 relative  border bg-gray-200">
+                        <div>
+                            <img src="" alt="">
+                            <a href=""> <i
+                                    class="fa-regular fa-heart absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
+                            </a>
+                            <a href=""><i
+                                    class="fa-regular fa-eye absolute right-4 top-12 rounded-full px-1 py-1 bg-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="font-medium">Breed Dry Dog Food</h4>
+                        <div>
+                            <span class="text-[#fe6410]">$100</span>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <span>(85)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class=" card w-60 h-60 relative  border bg-gray-200">
+                        <div>
+                            <img src="" alt="">
+                            <a href=""> <i
+                                    class="fa-regular fa-heart absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
+                            </a>
+                            <a href=""><i
+                                    class="fa-regular fa-eye absolute right-4 top-12 rounded-full px-1 py-1 bg-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="font-medium">Breed Dry Dog Food</h4>
+                        <div>
+                            <span class="text-[#fe6410]">$100</span>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <span>(85)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class=" card w-60 h-60 relative  border bg-gray-200">
+                        <div>
+                            <img src="" alt="">
+                            <a href=""> <i
+                                    class="fa-regular fa-heart absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
+                            </a>
+                            <a href=""><i
+                                    class="fa-regular fa-eye absolute right-4 top-12 rounded-full px-1 py-1 bg-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="font-medium">Breed Dry Dog Food</h4>
+                        <div>
+                            <span class="text-[#fe6410]">$100</span>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <span>(85)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class=" card w-60 h-60 relative  border bg-gray-200">
+                        <div>
+                            <img src="" alt="">
+                            <a href=""> <i
+                                    class="fa-regular fa-heart absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
+                            </a>
+                            <a href=""><i
+                                    class="fa-regular fa-eye absolute right-4 top-12 rounded-full px-1 py-1 bg-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="font-medium">Breed Dry Dog Food</h4>
+                        <div>
+                            <span class="text-[#fe6410]">$100</span>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <span>(85)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class=" card w-60 h-60 relative  border bg-gray-200">
+                        <div>
+                            <img src="" alt="">
+                            <a href=""> <i
+                                    class="fa-regular fa-heart absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
+                            </a>
+                            <a href=""><i
+                                    class="fa-regular fa-eye absolute right-4 top-12 rounded-full px-1 py-1 bg-white"></i>
+                            </a>
+                            <p class="border rounded bg-[#fe6410] text-white px-1 absolute top-1 left-2 text-xs">New</p>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="font-medium">Breed Dry Dog Food</h4>
+                        <div>
+                            <span class="text-[#fe6410]">$100</span>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <span>(85)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class=" card w-60 h-60 relative  border bg-gray-200">
+                        <div>
+                            <img src="" alt="">
+                            <a href=""> <i
+                                    class="fa-regular fa-heart absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
+                            </a>
+                            <a href=""><i
+                                    class="fa-regular fa-eye absolute right-4 top-12 rounded-full px-1 py-1 bg-white"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="font-medium">Breed Dry Dog Food</h4>
+                        <div>
+                            <span class="text-[#fe6410]">$100</span>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <span>(85)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class=" card w-60 h-60 relative  border bg-gray-200">
+                        <div>
+                            <img src="" alt="">
+                            <a href=""> <i
+                                    class="fa-regular fa-heart absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
+                            </a>
+                            <a href=""><i
+                                    class="fa-regular fa-eye absolute right-4 top-12 rounded-full px-1 py-1 bg-white"></i>
+                            </a>
+                            <p class="border rounded bg-[#fe6410] text-white px-1 absolute top-1 left-2 text-xs">New</p>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="font-medium">Breed Dry Dog Food</h4>
+                        <div>
+                            <span class="text-[#fe6410]">$100</span>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <span>(85)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class=" card w-60 h-60 relative  border bg-gray-200">
+                        <div>
+                            <img src="" alt="">
+                            <a href=""> <i
+                                    class="fa-regular fa-heart absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
+                            </a>
+                            <a href=""><i
+                                    class="fa-regular fa-eye absolute right-4 top-12 rounded-full px-1 py-1 bg-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="font-medium">Breed Dry Dog Food</h4>
+                        <div>
+                            <span class="text-[#fe6410]">$100</span>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <i class="fa-solid fa-star text-[#ffad33]"></i>
+                            <span>(85)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-16">
-            <div>
-                <div class="relative w-full md:w-60 xl:w-72 border rounded bg-gray-200">
-                    <img class="mx-16 md:mx-10" src="img/product/Frame 609.png" alt="">
-                    <a href="">
-                        <i class="fa-solid fa-trash-can absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
-                    </a>
-                    <p
-                        class="border rounded bg-gradient-to-r from-[#ff620e] to-[#f88d43] px-1 absolute top-1 left-2 text-xs">
-                        -40%</p>
-                    <button class="border bg-gradient-to-r from-[#ff620e] to-[#f88d43] w-full text-white px-4 py-1"><i
-                            class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
-                </div>
-                <div class="my-4">
-                    <h4 class="font-medium">The North Coat</h4>
-                    <div class="flex gap-20 lg:justify-between">
-                        <p><span class="text-[#ff620e]">$120</span> $160 </p>
-                        <p class="text-[#ff620e]">10 point</p>
-                    </div>
-
-                </div>
-            </div>
-            <div>
-                <div class="relative w-full md:w-60 xl:w-72 border rounded bg-gray-200">
-                    <img class="mx-16 md:mx-10" src="img/product/Frame 609.png" alt="">
-                    <a href="">
-                        <i class="fa-solid fa-trash-can absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
-                    </a>
-                    <p
-                        class="border rounded bg-gradient-to-r from-[#ff620e] to-[#f88d43] px-1 absolute top-1 left-2 text-xs">
-                        -40%</p>
-                    <button class="border bg-gradient-to-r from-[#ff620e] to-[#f88d43] w-full text-white px-4 py-1"><i
-                            class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
-                </div>
-                <div class="my-4">
-                    <h4 class="font-medium">The North Coat</h4>
-                    <div class="flex gap-20 lg:justify-between">
-                        <p><span class="text-[#ff620e]">$120</span> $160 </p>
-                        <p class="text-[#ff620e]">10 point</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="relative w-full md:w-60 xl:w-72 border rounded bg-gray-200">
-                    <img class="mx-16 md:mx-10" src="img/product/Frame 609.png" alt="">
-                    <a href="">
-                        <i class="fa-solid fa-trash-can absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
-                    </a>
-                    <p
-                        class="border rounded bg-gradient-to-r from-[#ff620e] to-[#f88d43] px-1 absolute top-1 left-2 text-xs">
-                        -40%</p>
-                    <button class="border bg-gradient-to-r from-[#ff620e] to-[#f88d43] w-full text-white px-4 py-1"><i
-                            class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
-                </div>
-                <div class="my-4">
-                    <h4 class="font-medium">The North Coat</h4>
-                    <div class="flex gap-20 lg:justify-between">
-                        <p><span class="text-[#ff620e]">$120</span> $160 </p>
-                        <p class="text-[#ff620e]">10 point</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="relative w-full md:w-60 xl:w-72 border rounded bg-gray-200">
-                    <img class="mx-16 md:mx-10" src="img/product/Frame 609.png" alt="">
-                    <a href="">
-                        <i class="fa-solid fa-trash-can absolute right-4 top-4 rounded-full px-1 py-1 bg-white "></i>
-                    </a>
-                    <p
-                        class="border rounded bg-gradient-to-r from-[#ff620e] to-[#f88d43] px-1 absolute top-1 left-2 text-xs">
-                        -40%</p>
-                    <button class="border bg-gradient-to-r from-[#ff620e] to-[#f88d43] w-full text-white px-4 py-1"><i
-                            class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
-                </div>
-                <div class="my-4">
-                    <h4 class="font-medium">The North Coat</h4>
-                    <div class="flex gap-20 lg:justify-between">
-                        <p><span class="text-[#ff620e]">$120</span> $160 </p>
-                        <p class="text-[#ff620e]">10 point</p>
-                    </div>
-                </div>
-            </div>
-
-
+        <div class="my-10 flex justify-center">
+            <button class="border bg-gradient-to-r from-[#ff620e] to-[#f88d43] text-white px-4 py-2 rounded ">View
+                All Products</button>
         </div>
     </section>
 

@@ -63,10 +63,10 @@
                 <div class="w-3/5 bg-[#3E3E3E] text-white rounded-br-full px-2">
                     <ul class="flex justify-between items-center list-none mr-12">
                         <li class="mr-8"><a href=""><img class="w-16 md:w-20 lg:w-28 " src="img/Home/a03 2.png" alt=""></a></li>
-                        <li class="navlink-active"><a class="nav" href="./DnsNetWork_Home.html">Home</a></li>
-                        <li><a class="nav" href="#">Contact</a></li>
-                        <li><a class="nav" href="./About_us.html">About </a></li>
-                        <li><a class="nav" href="#">Sign Up</a></li>
+                        <li class="navlink-active"><a class="nav" href="./index.html">Home</a></li>
+                        <li><a class="nav" href="./LogIn.html">Contact</a></li>
+                        <li><a class="nav" href="./About.html">About </a></li>
+                        <li><a class="nav" href="./SignUp.html">Sign Up</a></li>
                     </ul>
                 </div>
                 <div class="w-2/5 flex justify-around items-center list-none bg-white">
@@ -80,10 +80,10 @@
                 
                     <div class="flex items-center gap-8">
                         <li>
-                            <a href=""><img src="img/Home/Vector (2).png" alt=""></a>
+                            <a href="./Wishlist.html"><img src="img/Home/Vector (2).png" alt=""></a>
                         </li>
                         <li>
-                            <a href=""><img src="img/Home/Cart1 with buy.png" alt=""></a>
+                            <a href="./Cart.html"><img src="img/Home/Cart1 with buy.png" alt=""></a>
                         </li>
                         <li><i class="fa-solid fa-user"></i></li>
                     </div>
@@ -100,57 +100,115 @@
                 </svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li class="navlink-active"><a class="nav" href="./Telesheba-home.html">Home</a></li>
-                <li><a class="nav" href="./About_us.html">About Us</a></li>
+                <li class="navlink-active"><a class="nav" href="./index.html">Home</a></li>
+                <li><a class="nav" href="./Products.html">About Us</a></li>
 
-                <li><a class="nav" href="#">Packages</a></li>
-                <li><a class="nav" href="">Contact Us</a></li>
+                <li><a class="nav" href="./SignUp.html">SignUp</a></li>
+                <li><a class="nav" href="./LogIn.html">Contact Us</a></li>
 
             </ul>
         </div>
 
     </header>
-
-    <section class="container">
-        <div class="flex mb-6">
+    <!-------------------- Banner Section ------------------->
+    <section class="container px-6 lg:px-0 pt-12 md:pt-0">
+        <div class="flex flex-col md:flex-row mb-6">
             <!-- dashboard -->
-            <div class="w-1/6 pt-6 border-r-2 mr-12 ">
-                <ul class="">
-                    <li>
-                        <details class="collapse">
-                            <summary class="collapse-title text-lg font-medium">Woman's fashion
-                                <i class="fa-solid fa-angle-right ms-6">
+            <div class="md:flex hidden md:w-1/4 lg:w-1/5 xl:w-1/6  pt-6 border-r-2 mr-12 mx-auto">
+                <ul>
+                    <li class="px-2">
+                        <details class="collapse rounded-none">
+                            <summary class="collapse-title p-0 min-h-fit">Woman's fashion
+                                <i class="fa-solid fa-angle-down ms-2">
                                 </i>
                             </summary>
-                            <div class="collapse-content">
-                    <li>Cosmetics</li>
-                    <li><a href="">Jwellary</a></li>
+                            <div class="collapse-content pt-2 pb-0 px-2 bg-slate-100 rounded-lg">
+                                <li><a href="">- Saree</a></li>
+                                <li class="mt-1"><a href="">- Cosmetics</a></li>
+                                <li class="mt-1"><a href="">- Jewellery</a></li>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="px-2 mt-2">
+                        <details class="collapse rounded-none">
+                            <summary class="collapse-title p-0 min-h-fit">Men's fashion
+                                <i class="fa-solid fa-angle-down ms-2">
+                                </i>
+                            </summary>
+                            <div class="collapse-content pt-2 pb-0 px-2 bg-slate-100 rounded-lg">
+                                <li><a href="">- Panjabi</a></li>
+                                <li class="mt-1"><a href="">- Shirt</a></li>
+                                <li class="mt-1"><a href="">- Shoe</a></li>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="px-2 mt-2"><a href="">Electronics</a></li>
+                    <li class="px-2 mt-2"><a href="">Home & Lifestyles</a></li>
+                    <li class="px-2 mt-2"><a href="">Medicine</a></li>
+                    <li class="px-2 mt-2"><a href="">Sports & Outdoor</a></li>
+                    <li class="px-2 mt-2"><a href="">Baby's toys</a></li>
+                    <li class="px-2 mt-2"><a href="">Groceries & Pets</a></li>
+                    <li class="px-2 mt-2"><a href="">Health & Beauty</a></li>
+                </ul>
             </div>
-            </details>
-            </li>
-            <li>
-                <details class="collapse">
-                    <summary class="collapse-title text-lg font-medium">Men's fashion <i
-                            class="fa-solid fa-angle-right ms-6"></i>
-                    </summary>
-                    <div class="collapse-content">
-            <li><a href="">Panjabi</a></li>
-            <li><a href="">Shoes</a></li>
-        </div>
-        </details>
-        </li>
-        <li>Electronics</li>
-        <li>Home & Lifestyles</li>
-        <li>Medicine</li>
-        <li>Sports & Outdoor</li>
-        <li>Baby's toys</li>
-        <li>Groceries & Pets</li>
-        <li>Health & Beauty</li>
-        </ul>
-        </div>
+            <div class="flex md:hidden px-2 mx-auto">
+                <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4  ">
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li>
+                            <details class="collapse rounded-none">
+                                <summary class="collapse-title p-0 min-h-fit">Woman's fashion
+                                    <i class="fa-solid fa-angle-down ms-1 sm:ms-2">
+                                    </i>
+                                </summary>
+                                <div class="collapse-content pt-2 pb-0 px-2 rounded-lg text-left">
+                                    <li><a href="">- Saree</a></li>
+                                    <li class="mt-1"><a href="">- Cosmetics</a></li>
+                                    <li class="mt-1"><a href="">- Jewellery</a></li>
+                                </div>
+                            </details>
+                        </li>
+                    </button>
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li>
+                            <details class="collapse rounded-none">
+                                <summary class="collapse-title p-0 min-h-fit">Men's fashion
+                                    <i class="fa-solid fa-angle-down ms-2">
+                                    </i>
+                                </summary>
+                                <div class="collapse-content pt-2 pb-0 px-2 rounded-lg">
+                                    <li><a href="">- Panjabi</a></li>
+                                    <li class="mt-1"><a href="">- Shirt</a></li>
+                                    <li class="mt-1"><a href="">- Shoe</a></li>
+                                </div>
+                            </details>
+                        </li>
+                    </button>
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li"><a href="">Electronics</a></li>
+                    </button>
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li><a href="">Home & Lifestyles</a></li>
+                    </button>
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li><a href="">Medicine</a></li>
+                    </button>
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li><a href="">Sports & Outdoor</a></li>
+                    </button>
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li><a href="">Baby's toys</a></li>
+                    </button>
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li><a href="">Groceries & Pets</a></li>
+                    </button>
+                    <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] p-2 rounded-lg text-white">
+                        <li><a href="">Health & Beauty</a></li>
+                    </button>
+                </ul>
+            </div>
 
         <!-- banner -->
-        <div class="w-5/6 pt-6">
+        <div class="md:w-3/4 lg:w-5/6 pt-6">
             <div class="carousel w-full">
                 <div id="item1" class="carousel-item w-full">
                     <img src="img/Home/Frame 560.png" class="w-full" />
@@ -177,13 +235,13 @@
     </section>
 
     <!-- Flash sale section -->
-    <section class="my-20 ps-6 container">
+    <section class="py-6 md:py-20 ps-6 container">
         <div class="slider ps-6 md:ps-0">
             <small class="text-red-400">Today's</small>
             <div class="content flex-col md:flex md:flex-row justify-between items-center">
-                <div class="flex md:flex-row gap-6 md:gap-20">
+                <div class="flex flex-col md:flex-row gap-6 md:gap-20">
                     <h2 class="text-xl md:text-4xl font-bold md:pt-7">Flash Sales</h2>
-                    <div id="countdown" class="grid grid-cols-4 md:gap-4 w-96">
+                    <div id="countdown" class="grid grid-cols-4 md:gap-4 w-72 md:w-96">
                         <div>
                             <p class="font-medium text-base">Days</p>
                             <div class="flex items-center text-xl md:text-4xl font-bold">
@@ -229,7 +287,7 @@
                             class='fa-sharp fa-solid fa-chevron-right px-3 py-2 md:px-6 md:py-5'></i></button>
                 </div>
             </div>
-            <div class="cont-cards grid grid-cols-4 gap-4 mt-16">
+            <div class="cont-cards grid grid-cols-4 gap-4 mt-8 md:mt-16">
                 <div>
                     <div class="card relative w-60 border bg-gray-200">
                         <img src="img/Home/Frame 605.png" alt="">
@@ -373,7 +431,7 @@
     </section>
 
     <!-- categories -->
-    <section class="container my-20 ps-6">
+    <section class="container pb-6 lg:py-20 ps-6">
         <div class="slider ps-6 md:ps-0">
             <small class="text-red-400">Categories</small>
             <div class="content flex-col md:flex md:flex-row justify-between items-center">
@@ -388,7 +446,7 @@
                             class='fa-sharp fa-solid fa-chevron-right px-3 py-2 md:px-6 md:py-5'></i></button>
                 </div>
             </div>
-            <div class="category-cards grid grid-cols-4 gap-4 mt-16">
+            <div class="category-cards grid grid-cols-4 gap-4 mt-8 md:mt-16">
                 <div>
                     <div
                         class="card w-32 h-32 items-center justify-center  border bg-white hover:bg-gradient-to-r from-[#ff620e] to-[#f88d43]">
@@ -475,17 +533,17 @@
     </section>
 
     <!-- best selling Products -->
-    <section class="container my-20 ps-6">
+    <section class="container py-6 md:py-20 ps-6">
         <div class="slider ps-6 md:ps-0">
             <small class="text-red-400">This Month</small>
             <div class="content flex-col md:flex md:flex-row justify-between items-center">
 
                 <h2 class="text-xl md:text-4xl font-bold md:pt-7">Best Selling Products</h2>
 
-                <button class="bg-gradient-to-r from-[#ff620e] to-[#f88d43] px-6 py-2 mr-20 rounded-lg text-white">View
+                <button class="my-6 md:my-0 bg-gradient-to-r from-[#ff620e] to-[#f88d43] px-6 py-2 mr-20 rounded-lg text-white">View
                     All</button>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-6 md:mt-16">
                 <div>
                     <div class="card relative w-60 border bg-gray-200">
                         <img src="img/Home/Frame 605.png" alt="">
@@ -582,12 +640,12 @@
             </div>
         </div>
     </section>
-    <div class="container my-24">
+    <div class="container pb-12 lg:py-24">
         <img class="px-10 md:mx-auto w-full" src="img/Home/Frame 600.png" alt="">
     </div>
 
     <!-- Explore Products -->
-    <section class="container px-6 my-20">
+    <section class="container px-6 md:pt-20">
         <div class="ps-6 md:ps-0">
             <small class="text-red-400">Our Products</small>
             <h2 class="text-xl md:text-4xl font-bold md:pt-7">Explore Our products</h2>
@@ -603,9 +661,9 @@
                             class='fa-sharp fa-solid fa-chevron-right px-3 py-2 md:px-6 md:py-5'></i></button>
                 </div>
             </div> -->
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8 md:mt-16">
                 <div class="flex flex-col">
-                    <div class=" card md:w-60 md:h-60 relative  border bg-gray-200">
+                    <div class=" card w-60 h-60 relative  border bg-gray-200">
                         <div>
                             <img src="" alt="">
                             <a href=""> <i
@@ -816,20 +874,20 @@
     </section>
 
     <!-- Customer services -->
-    <section class="container lg:mt-44 lg:mb-20">
+    <section class="container pt-10 md:mt-20 lg:mt-44 lg:mb-20">
         <div class="flex flex-col items-center gap-4 md:flex-row md:gap-8 lg:gap-32 md:justify-center">
-            <div>
+            <div class="mb-4 md:my-0">
                 <img class="mx-auto" src="img/services/Services.png" alt="">
 
                 <h2 class="text-[#ff620e] text-sm md:text-base font-bold">FREE AND FAST DELIVERY</h2>
                 <small class="text-[#ff620e]">Free delivery for all orders over $150+</small>
             </div>
-            <div>
+            <div class="mb-4 md:my-0">
                 <img class="mx-auto" src="img/services/Services (1).png" alt="">
                 <h2 class="text-[#ff620e]  text-sm md:text-base font-bold">24/7 CUSTOMER SERVICE</h2>
                 <small class="text-[#ff620e]">Friendly 24/7 customer support</small>
             </div>
-            <div>
+            <div class="mb-4 md:my-0">
                 <img class="mx-auto" src="img/services/Services (2).png" alt="">
                 <h2 class="text-[#ff620e] text-sm md:text-base font-bold">MONEY BACK GUARANTEE</h2>
                 <small class="text-[#ff620e]">We return money within 30 days</small>
@@ -838,9 +896,9 @@
     </section>
 
     <!-- Short brief -->
-    <section class="container mt-10 lg:mt-28">
+    <section class="container pt-10 md:pt-16 lg:mt-28">
         <div class=" flex flex-col lg:flex-row gap-4 lg:gap-10 xl:gap-24">
-            <div class="px-6 lg:px-0 w-full md:w-3/4 lg:w-1/2">
+            <div class="px-6 xl:px-0 w-full md:w-3/4 lg:w-1/2">
                 <h2 class="font-semibold text-lg">Short Brief About Us</h2>
                 <p class="pt-6 lg:text-justify">Lorem ipsum dolor sit amet consectetur. Bibendum consequat laoreet
                     turpis
@@ -992,8 +1050,8 @@
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                     infinite: true,
                     // dots: true
                 }
@@ -1001,15 +1059,15 @@
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 3,
+                    slidesToScroll: 3
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             }
             // You can unslick at a given breakpoint now by adding:

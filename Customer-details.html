@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <link rel="stylesheet" href="css/main.css">
-    <title>Order Management</title>
+    <title>Customer Details</title>
 </head>
 
 <body class="text-gray-800 font-inter">
@@ -100,7 +100,7 @@
             </button>
             <ul class="flex items-center text-sm ml-4">
                 <li class="mr-2">
-                    <a href="#" class="text-black text-xl font-bold hover:text-gray-600 ">Order Management</a>
+                    <a href="#" class="text-black text-xl font-bold hover:text-gray-600 ">Customer Details</a>
                 </li>
             </ul>
             <ul class="ml-auto flex gap-4">
@@ -113,20 +113,70 @@
             </ul>
         </div>
 
-        <!----------------- Tab -------------------->
-        <div class="p-6">
-            <div class="flex flex-col md:flex-row border-b-0 md:border-b-2">
-                <a class="tab text-blue-500 border-b-0 md:border-b-2 border-b-blue-500">Pending</a>
-                <a class="tab ">Confirmed</a>
-                <a class="tab">Processing</a>
-                <a class="tab">Picked</a>
-                <a class="tab">Shipped</a>
-                <a class="tab">Delivered</a>
+
+        <div class="ms-6 mt-4 p-6 card shadow mr-6">
+            <div class="flex">
+
+                <div class="flex items-center gap-2 w-1/3">
+                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                    <div class="flex flex-col">
+                        <p>Demo Name</p>
+                        <small>demo@gmail.com</small>
+                    </div>
+
+                </div>
+                <div class="border border-r-2 bg-slate-100 mr-6"></div>
+
+                <div class="w-1/3">
+                    <h4 class="uppercase text-gray-400">Personal Information</h4>
+                    <div class="flex gap-10 text-sm mt-2">
+                        <div class="">
+                            <p>Contact info</p>
+                            <p>Gender</p>
+                            <p>Date of Birth</p>
+                            <p>Member Since</p>
+
+                        </div>
+                        <div>
+                            <p>(201) 555-354634124</p>
+                            <p>Male</p>
+                            <p>1 Jan, 1985</p>
+                            <p>3 March, 2023</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="border border-r-2 bg-slate-100 mr-6"></div>
+
+                <div class="w-1/3">
+                    <h4 class="uppercase text-gray-400">Shipping Address</h4>
+                    <small>demo addresses</small>
+                    <div class="flex gap-12 text-sm mt-2">
+                        <div>
+                            <h4 class="font-bold text-lg">150</h4>
+                            <span>Total order</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">140</h4>
+                            <span>Completed</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">10</h4>
+                            <span>Canceled</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-b-2 my-4"></div>
+            <div class="flex gap-6 flex-col md:flex-row">
+                <a class="tab text-blue-500 border-b-0 md:border-b-2 border-b-blue-500">All Order</a>
+                <a class="tab ">Completed</a>
                 <a class="tab">Cancelled</a>
             </div>
         </div>
 
-        <div class="p-6 flex flex-col md:flex-row justify-between">
+        <div class="mt-4 p-6 flex flex-col md:flex-row justify-between">
             <div class="relative">
                 <input class="py-2 pr-3 pl-10 rounded shadow" type="text" placeholder="Search by order ID">
                 <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2"></i>
@@ -150,9 +200,8 @@
                         <tr>
                             <th>OrderID</th>
                             <th>Created</th>
-                            <th>Customer</th>
                             <th>Total</th>
-                            <th>Profit</th>
+                            <th>Payment</th>
                             <th>Status</th>
                             <th></th>
 
@@ -163,24 +212,14 @@
                         <tr>
                             <td>#6548</td>
                             <td>2 min Ago</td>
-                            <td>demo Name</td>
                             <td>$654</td>
                             <td>
-                                $154 <span class="text-green-500 bg-slate-100 rounded px-1">16%</span></td>
-                            <td>
-                                <span class="bg-[#fff6d6] text-yellow-500 px-2 py-1 rounded">Pending <i
-                                        class="ps-2 fa-solid fa-angle-down"></i></span>
+                                CC
+                            </td>
+                            <td class="text-[#43ce81]">
+                                Completed
                             </td>
                             <td>
-                                <!-- <div class="collapse bg-base-200">
-                                    <input type="checkbox" class="peer" /> 
-                                    <div class="collapse-title peer-checked:text-secondary-content">
-                                        <img src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png" alt="">
-                                    </div>
-                                    <div class="collapse-content  peer-checked:text-black"> 
-                                      <p>hello</p>
-                                    </div>
-                                  </div> -->
                                 <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
                                         src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
                                         alt=""></button>
@@ -269,8 +308,8 @@
                                             <td></td>
                                             <td class="font-semibold">$2647.32</td>
                                         </tr>
-                                        
-                                      
+
+
                                     </tbody>
                                 </table>
                             </td>
@@ -279,23 +318,19 @@
                         <!-- row 2 -->
 
                         <tr>
-
                             <td>#6548</td>
                             <td>2 min Ago</td>
-                            <td>demo Name</td>
                             <td>$654</td>
                             <td>
-                                $154 <span class="text-green-500 bg-slate-100 rounded px-1">16%</span></td>
-                            <td>
-                                <span class="bg-[#d9ffec] text-green-400 px-2 py-1 rounded">Confirmed<i
-                                        class="ps-2 fa-solid fa-angle-down"></i></span>
+                                CC
                             </td>
-
+                            <td class="text-[#ee7475]">
+                                Cancelled
+                            </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table2')"><img
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
                                         src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt="">
-                                </button>
+                                        alt=""></button>
                             </td>
                         </tr>
                         <tr id="table2" class="hidden w-full">
@@ -381,8 +416,8 @@
                                             <td></td>
                                             <td class="font-semibold">$2647.32</td>
                                         </tr>
-                                        
-                                      
+
+
                                     </tbody>
                                 </table>
                             </td>
@@ -393,19 +428,17 @@
                         <tr>
                             <td>#6548</td>
                             <td>2 min Ago</td>
-                            <td>demo Name</td>
                             <td>$654</td>
                             <td>
-                                $154 <span class="text-green-500 bg-slate-100 rounded px-1">16%</span></td>
-                            <td>
-                                <span class="bg-[#d9f3ff] text-blue-400 px-2 py-1 rounded">Processing <i
-                                        class="ps-2 fa-solid fa-angle-down"></i></span>
+                                CC
+                            </td>
+                            <td class="text-[#ffc600]">
+                                Pending
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table3')"><img
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
                                         src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt="">
-                                </button>
+                                        alt=""></button>
                             </td>
                         </tr>
                         <tr id="table3" class="hidden w-full">
@@ -491,31 +524,29 @@
                                             <td></td>
                                             <td class="font-semibold">$2647.32</td>
                                         </tr>
-                                        
-                                      
+
+
                                     </tbody>
                                 </table>
                             </td>
                         </tr>
-
                         <!-- row 4 -->
+
 
                         <tr>
                             <td>#6548</td>
                             <td>2 min Ago</td>
-                            <td>demo Name</td>
                             <td>$654</td>
                             <td>
-                                $154 <span class="text-green-500 bg-slate-100 rounded px-1">16%</span></td>
-                            <td>
-                                <span class="bg-[#d9e6ff] text-blue-500 px-2 py-1 rounded">Picked <i
-                                        class="ps-2 fa-solid fa-angle-down"></i></span>
+                                CC
+                            </td>
+                            <td class="text-[#43ce81]">
+                                Completed
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table4')"><img
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
                                         src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt="">
-                                </button>
+                                        alt=""></button>
                             </td>
                         </tr>
                         <tr id="table4" class="hidden w-full">
@@ -601,32 +632,29 @@
                                             <td></td>
                                             <td class="font-semibold">$2647.32</td>
                                         </tr>
-                                        
-                                      
+
+
                                     </tbody>
                                 </table>
                             </td>
                         </tr>
 
-
                         <!-- row 5 -->
+
                         <tr>
                             <td>#6548</td>
                             <td>2 min Ago</td>
-                            <td>demo Name</td>
                             <td>$654</td>
                             <td>
-                                $154 <span class="text-green-500 bg-slate-100 rounded px-1">16%</span></td>
-                            <td>
-                                <span class="bg-[#f4d6ff] text-purple-500 px-2 py-1 rounded">Shipped<i
-                                        class="ps-2 fa-solid fa-angle-down"></i></span>
+                                CC
                             </td>
-
+                            <td class="text-[#43ce81]">
+                                Completed
+                            </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table5')"><img
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
                                         src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt="">
-                                </button>
+                                        alt=""></button>
                             </td>
                         </tr>
                         <tr id="table5" class="hidden w-full">
@@ -712,31 +740,27 @@
                                             <td></td>
                                             <td class="font-semibold">$2647.32</td>
                                         </tr>
-                                        
-                                      
+
+
                                     </tbody>
                                 </table>
                             </td>
                         </tr>
-
                         <!-- row 6 -->
                         <tr>
                             <td>#6548</td>
                             <td>2 min Ago</td>
-                            <td>demo Name</td>
                             <td>$654</td>
                             <td>
-                                $154 <span class="text-green-500 bg-slate-100 rounded px-1">16%</span></td>
-                            <td>
-                                <span class="bg-[#dedaef] text-blue-500 px-2 py-1 rounded">Delivered<i
-                                        class="ps-2 fa-solid fa-angle-down"></i></span>
+                                CC
                             </td>
-
+                            <td class="text-[#43ce81]">
+                                Completed
+                            </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table6')"><img
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
                                         src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt="">
-                                </button>
+                                        alt=""></button>
                             </td>
                         </tr>
                         <tr id="table6" class="hidden w-full">
@@ -822,8 +846,8 @@
                                             <td></td>
                                             <td class="font-semibold">$2647.32</td>
                                         </tr>
-                                        
-                                      
+
+
                                     </tbody>
                                 </table>
                             </td>
@@ -834,20 +858,17 @@
                         <tr>
                             <td>#6548</td>
                             <td>2 min Ago</td>
-                            <td>demo Name</td>
                             <td>$654</td>
                             <td>
-                                $154 <span class="text-green-500 bg-slate-100 rounded px-1">16%</span></td>
-                            <td>
-                                <span class="bg-[#fff6d6] text-yellow-500 px-2 py-1 rounded">Pending <i
-                                        class="ps-2 fa-solid fa-angle-down"></i></span>
+                                CC
                             </td>
-
+                            <td class="text-[#43ce81]">
+                                Completed
+                            </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table7')"><img
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
                                         src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt="">
-                                </button>
+                                        alt=""></button>
                             </td>
                         </tr>
                         <tr id="table7" class="hidden w-full">
@@ -933,8 +954,8 @@
                                             <td></td>
                                             <td class="font-semibold">$2647.32</td>
                                         </tr>
-                                        
-                                      
+
+
                                     </tbody>
                                 </table>
                             </td>
@@ -944,20 +965,17 @@
                         <tr>
                             <td>#6548</td>
                             <td>2 min Ago</td>
-                            <td>demo Name</td>
                             <td>$654</td>
                             <td>
-                                $154 <span class="text-green-500 bg-slate-100 rounded px-1">16%</span></td>
-                            <td>
-                                <span class="bg-[#fff6d6] text-yellow-500 px-2 py-1 rounded">Pending <i
-                                        class="ps-2 fa-solid fa-angle-down"></i></span>
+                                CC
                             </td>
-
+                            <td class="text-[#43ce81]">
+                                Completed
+                            </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table8')"><img
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
                                         src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt="">
-                                </button>
+                                        alt=""></button>
                             </td>
                         </tr>
                         <tr id="table8" class="hidden w-full">
@@ -1043,8 +1061,8 @@
                                             <td></td>
                                             <td class="font-semibold">$2647.32</td>
                                         </tr>
-                                        
-                                      
+
+
                                     </tbody>
                                 </table>
                             </td>

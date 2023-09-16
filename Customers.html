@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Customers</title>
+</head>
+
+<body class="text-gray-800 font-inter">
+
+    <!-- start: Sidebar -->
+    <div class="fixed left-0 top-0 w-64 h-full bg-white p-4 z-50 sidebar-menu transition-transform">
+        <a href="./index.html" class="flex items-center justify-center  pb-4 border-b border-b-gray-800">
+            <img src="img/a03 2.png" alt="" class="w-32 h-20 rounded">
+        </a>
+        <ul class="mt-4">
+            <h1 class="text-gray-500 py-3">Main Menu</h1>
+            <li class="mb-1 group active">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-500 hover: bg-orange-400  hover:text-gray-100 rounded-md group-[.active]:bg-gradient-to-r from-[#ff620e] to-[#f88d43] group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                    <i class="ri-home-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">Dashboard</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-500 hover:bg-orange-400 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-orange-400 group-[.selected]:text-gray-100 sidebar-dropdown-toggle">
+                    <!-- <i class="ri-instance-line mr-3 text-lg"></i> -->
+                    <i class="fa-solid fa-cart-arrow-down mr-3"></i>
+                    <span class="text-sm">Order Management</span>
+                    <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+                </a>
+                <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+                    <li class="mb-4">
+                        <a href="#"
+                            class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Active
+                            order</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#"
+                            class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Completed
+                            order</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#"
+                            class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Canceled
+                            order</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-500 hover:bg-orange-400 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-orange-400 group-[.selected]:text-gray-100 sidebar-dropdown-toggle">
+                    <!-- <i class="ri-flashlight-line mr-3 text-lg"></i> -->
+                    <i class="fa-solid fa-user-group mr-3"></i>
+                    <span class="text-sm">Customers</span>
+                    <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+                </a>
+                <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+                    <li class="mb-4">
+                        <a href="#"
+                            class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Manage
+                            services</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-500 hover:bg-orange-400 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-orange-400 group-[.selected]:text-gray-100">
+                    <!-- <i class="ri-settings-2-line mr-3 text-lg"></i> -->
+                    <i class="fa-solid fa-file-lines mr-3"></i>
+                    <span class="text-sm">Transaction</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="#"
+                    class="flex items-center py-2 px-4 text-gray-500 hover:bg-orange-400 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-orange-400 group-[.selected]:text-gray-100">
+                    <!-- <i class="ri-settings-2-line mr-3 text-lg"></i> -->
+                    <i class="fa-solid fa-cube mr-3"></i>
+                    <span class="text-sm">Product List</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+    <!-- end: Sidebar -->
+
+    <!-- start: Main -->
+    <main class="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-50 min-h-screen transition-all main">
+        <div class="py-4 px-6 flex items-center sticky top-0 left-0 z-30">
+            <button type="button" class="text-lg text-gray-600 sidebar-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+            <ul class="flex items-center text-sm ml-4">
+                <li class="mr-2">
+                    <a href="#" class="text-black text-xl font-bold hover:text-gray-600 ">Customers</a>
+                </li>
+            </ul>
+            <ul class="ml-auto flex gap-4">
+                <li class="mr-1 dropdown">
+                    <i class="fa-regular fa-message"></i>
+                </li>
+                <li class="dropdown">
+                    <i class="fa-regular fa-bell"></i>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="p-6 flex flex-col md:flex-row justify-between">
+
+            <div class="relative">
+                <input class="py-2 pr-3 pl-10 rounded shadow" type="text" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2"></i>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <div class="overflow-x-auto bg-white rounded-lg">
+                <table class="table">
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>PhoneNumber</th>
+                            <th>Created</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="flex gap-2">
+                                    <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
+                                    <div class="flex flex-col">
+                                        <p>Demo Name</p>
+                                        <small>demo@gmail.com</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(201)555-4564564</td>
+                            <td>6 April,2023</td>
+                            <td class="flex gap-3">
+                                <button class=""><i class="fa-regular fa-pen-to-square"></i></button>
+
+                                <button class=""><i class="fa-solid fa-lock"></i></button>
+
+                                <button class=""><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Page Select -->
+        <div class="px-6 flex flex-col md:flex-row md:justify-between py-5 gap-2">
+            <!-- <div class="flex justify-center md:justify-start items-center gap-2">
+                <p class="text-xs">Showing 1 to 10 of 30 entries</p>
+            </div> -->
+            <div class="flex justify-center md:justify-start items-center gap-2">
+                <p class="text-sm text-gray-500">Showing</p>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-white  text-tColor py-3 px-4 pr-8 rounded leading-tight focus:outline-none shadow">
+                        <option>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                        <option>40</option>
+                        <option>50</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-1 flex items-center px-2 text-gray-700">
+                        <i class="fa-solid fa-angle-down text-tColor"></i>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-500">of 50</p>
+            </div>
+
+            <div class="scale-75 xl:scale-100 grid grid-flow-col content-center font-semibold gap-2">
+                <a class="bg-gray-200 h-8 w-8 rounded flex items-center justify-center shadow" href="#"><svg width="6"
+                        height="10" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.125 0.75L0.875 7L7.125 13.25" stroke="#84818A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a class="bg-yellow-400 h-8 w-8 rounded flex items-center justify-center shadow" href="#">1</a>
+                <a class="bg-gray-200 h-8 w-8 rounded flex items-center justify-center shadow" href="#">2</a>
+                <a class="bg-gray-200 h-8 w-8 rounded flex items-center justify-center shadow" href="#">3</a>
+                <a class="bg-gray-200 h-8 w-8 rounded flex items-center justify-center shadow" href="#">4</a>
+                <a class="bg-gray-200 h-8 w-8 rounded flex items-center justify-center shadow" href="#">5</a>
+                <a class="bg-gray-200 h-8 w-8 rounded flex items-center justify-center shadow" href="#"><svg width="6"
+                        height="10" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.875 0.75L7.125 7L0.875 13.25" stroke="#84818A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+    <!-- end: Main -->
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

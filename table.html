@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Table Rows</title>
+    <!-- Include Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for hiding/showing the tables */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <table class="min-w-full">
+        <thead>
+            <tr>
+                <th class="py-2 px-4 bg-gray-100">Name</th>
+                <th class="py-2 px-4 bg-gray-100">Age</th>
+                <th class="py-2 px-4 bg-gray-100">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="py-2 px-4">John Doe</td>
+                <td class="py-2 px-4">30</td>
+                <td class="py-2 px-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"
+                        onclick="toggleTable('table1')">Show/Hide Table</button>
+                </td>
+            </tr>
+            <!-- First hidden table -->
+            <tr id="table1" class="hidden">
+                <td colspan="3">
+                    <table class="min-w-full">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 bg-gray-100">Product</th>
+                                <th class="py-2 px-4 bg-gray-100">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4">Product 1</td>
+                                <td class="py-2 px-4">$10</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4">Product 2</td>
+                                <td class="py-2 px-4">$20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Second hidden table -->
+            <tr id="table2" class="hidden">
+                <td class="py-2 px-4">Jane Smith</td>
+                <td class="py-2 px-4">25</td>
+                <td class="py-2 px-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"
+                        onclick="toggleTable('table2')">Show/Hide Table</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table class="min-w-full">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 bg-gray-100">Item</th>
+                                <th class="py-2 px-4 bg-gray-100">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4">Item 1</td>
+                                <td class="py-2 px-4">5</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4">Item 2</td>
+                                <td class="py-2 px-4">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Third hidden table -->
+            <tr id="table3" class="hidden">
+                <td class="py-2 px-4">Bob Johnson</td>
+                <td class="py-2 px-4">40</td>
+                <td class="py-2 px-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"
+                        onclick="toggleTable('table3')">Show/Hide Table</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table class="min-w-full">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 bg-gray-100">Service</th>
+                                <th class="py-2 px-4 bg-gray-100">Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4">Service 1</td>
+                                <td class="py-2 px-4">$50</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4">Service 2</td>
+                                <td class="py-2 px-4">$75</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function toggleTable() {
+            const table1 = document.getElementById('table1');
+            table1.classList.toggle('hidden');
+            
+            const table2 = document.getElementById('table2');
+            table2.classList.toggle('hidden');
+
+
+        }
+    </script>
+</body>
+</html>

@@ -70,12 +70,26 @@ nav>li {
 
 /*  */
 
-.notification-tab > .active {
+/* .notification-tab > .active {
     @apply text-blue-500 border-b-blue-500 hover:text-blue-500;
-}
-.order-tab > .active {
+} */
+/* .order-tab > .active {
     @apply bg-blue-500 text-white hover:text-white;
-}
+} */
 .main.active {
     @apply md:w-full md:ml-0;
 }
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  .btn-file input[type="file"] {
+    cursor: pointer;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: scale(3);
+    opacity: 0;
+  }

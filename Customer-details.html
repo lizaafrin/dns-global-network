@@ -115,7 +115,7 @@
 
 
         <div class="ms-6 mt-4 p-6 card shadow mr-6">
-            <div class="flex">
+            <div class="flex flex-col gap-4 lg:gap-0 lg:flex-row">
 
                 <div class="flex items-center gap-2 w-1/3">
                     <img class="w-10 h-10" src="img/Dashboard/Avatar.png" alt="">
@@ -152,7 +152,7 @@
                 <div class="w-1/3">
                     <h4 class="uppercase text-gray-400">Shipping Address</h4>
                     <small>demo addresses</small>
-                    <div class="flex gap-12 text-sm mt-2">
+                    <div class="flex gap-4 lg:gap-8 xl:gap-12 text-sm mt-2">
                         <div>
                             <h4 class="font-bold text-lg">150</h4>
                             <span>Total order</span>
@@ -169,14 +169,14 @@
                 </div>
             </div>
             <div class="border-b-2 my-4"></div>
-            <div class="flex gap-6 flex-col md:flex-row">
-                <a class="tab text-blue-500 border-b-0 md:border-b-2 border-b-blue-500">All Order</a>
+            <div class="flex flex-row">
+                <a class="tab text-blue-500 border-b-0 md:border-b-2 border-b-blue-500">AllOrder</a>
                 <a class="tab ">Completed</a>
                 <a class="tab">Cancelled</a>
             </div>
         </div>
 
-        <div class="mt-4 p-6 flex flex-col md:flex-row justify-between">
+        <div class="mt-4 p-6 flex flex-col gap-4 lg:flex-row justify-between">
             <div class="relative">
                 <input class="py-2 pr-3 pl-10 rounded shadow" type="text" placeholder="Search by order ID">
                 <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2"></i>
@@ -220,9 +220,7 @@
                                 Completed
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
-                                        src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt=""></button>
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><i class="text-lg fa-solid fa-circle-arrow-down"></i>
                             </td>
                         </tr>
                         <tr id="table1" class="hidden w-full">
@@ -328,9 +326,7 @@
                                 Cancelled
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
-                                        src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt=""></button>
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><i class="text-lg fa-solid fa-circle-arrow-down"></i>
                             </td>
                         </tr>
                         <tr id="table2" class="hidden w-full">
@@ -436,9 +432,7 @@
                                 Pending
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
-                                        src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt=""></button>
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><i class="text-lg fa-solid fa-circle-arrow-down"></i>
                             </td>
                         </tr>
                         <tr id="table3" class="hidden w-full">
@@ -544,9 +538,7 @@
                                 Completed
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
-                                        src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt=""></button>
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><i class="text-lg fa-solid fa-circle-arrow-down"></i>
                             </td>
                         </tr>
                         <tr id="table4" class="hidden w-full">
@@ -652,9 +644,7 @@
                                 Completed
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
-                                        src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt=""></button>
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><i class="text-lg fa-solid fa-circle-arrow-down"></i>
                             </td>
                         </tr>
                         <tr id="table5" class="hidden w-full">
@@ -758,9 +748,7 @@
                                 Completed
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
-                                        src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt=""></button>
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><i class="text-lg fa-solid fa-circle-arrow-down"></i>
                             </td>
                         </tr>
                         <tr id="table6" class="hidden w-full">
@@ -866,9 +854,7 @@
                                 Completed
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
-                                        src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt=""></button>
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><i class="text-lg fa-solid fa-circle-arrow-down"></i>
                             </td>
                         </tr>
                         <tr id="table7" class="hidden w-full">
@@ -973,9 +959,7 @@
                                 Completed
                             </td>
                             <td>
-                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><img
-                                        src="img/Dashboard/material-symbols_arrow-drop-down-circle-outline-rounded.png"
-                                        alt=""></button>
+                                <button class="  py-2 px-4 rounded" onclick="toggleTable('table1')"><i class="text-lg fa-solid fa-circle-arrow-down"></i>
                             </td>
                         </tr>
                         <tr id="table8" class="hidden w-full">

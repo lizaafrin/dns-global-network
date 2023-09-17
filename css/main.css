@@ -3649,10 +3649,6 @@ details.collapse summary::-webkit-details-marker{
   padding-top: 0.5rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
-}
-
 .pt-3{
   padding-top: 0.75rem;
 }
@@ -4284,6 +4280,26 @@ nav>li {
 .group.selected .group-\[\.selected\]\:text-gray-100{
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.group.active .group-\[\.active\]\:text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.group.active .group-\[\.active\]\:text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.group.active .group-\[\.active\]\:text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.group.selected .group-\[\.selected\]\:text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){
